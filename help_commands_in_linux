@@ -1,0 +1,6 @@
+cd src
+make clean  # Ignore any errors here.
+make
+cd ..
+./update_image.sh
+./run_bochs.sh  # This may ask your for your root password. 

@@ -1,0 +1,900 @@
+00000000000i[     ] Bochs x86 Emulator 2.3.5
+00000000000i[     ]   Build from CVS snapshot, on September 16, 2007
+00000000000i[     ] System configuration
+00000000000i[     ]   processors: 1 (cores=1, HT threads=1)
+00000000000i[     ]   A20 line support: yes
+00000000000i[     ]   APIC support: no
+00000000000i[     ] CPU configuration
+00000000000i[     ]   level: 5
+00000000000i[     ]   TLB enabled: yes
+00000000000i[     ]   SMP support: no
+00000000000i[     ]   FPU support: yes
+00000000000i[     ]   MMX support: yes
+00000000000i[     ]   SSE support: no
+00000000000i[     ]   CLFLUSH support: no
+00000000000i[     ]   v8086 mode support: yes
+00000000000i[     ]   VME support: yes
+00000000000i[     ]   3dnow! support: yes
+00000000000i[     ]   PAE support: no
+00000000000i[     ]   PGE support: no
+00000000000i[     ]   PSE support: yes
+00000000000i[     ]   x86-64 support: no
+00000000000i[     ]   SEP support: no
+00000000000i[     ] Optimization configuration
+00000000000i[     ]   Guest2HostTLB support: yes
+00000000000i[     ]   RepeatSpeedups support: yes
+00000000000i[     ]   Icache support: yes
+00000000000i[     ]   Host Asm support: yes
+00000000000i[     ]   Fast function calls: yes
+00000000000i[     ] Devices configuration
+00000000000i[     ]   NE2000 support: yes
+00000000000i[     ]   PCI support: yes
+00000000000i[     ]   SB16 support: yes
+00000000000i[     ]   USB support: no
+00000000000i[     ]   VGA extension support: vbe cirrus
+00000000000i[MEM0 ] allocated memory at 0xb6d21008. after alignment, vector=0xb6d22000
+00000000000i[MEM0 ] 16.00MB
+00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('/usr/share/bochs/BIOS-bochs-latest')
+00000000000i[MEM0 ] rom at 0xc0000/38400 ('/usr/share/bochs/VGABIOS-lgpl-latest')
+00000000000i[     ] lt_dlhandle is 0x8fb7618
+00000000000i[PLGIN] loaded plugin libbx_unmapped.la
+00000000000i[     ] lt_dlhandle is 0x8fb7af0
+00000000000i[PLGIN] loaded plugin libbx_biosdev.la
+00000000000i[     ] lt_dlhandle is 0x8fb8100
+00000000000i[PLGIN] loaded plugin libbx_cmos.la
+00000000000i[     ] lt_dlhandle is 0x8fb8258
+00000000000i[PLGIN] loaded plugin libbx_dma.la
+00000000000i[     ] lt_dlhandle is 0x8fb87c8
+00000000000i[PLGIN] loaded plugin libbx_pic.la
+00000000000i[     ] lt_dlhandle is 0x8fb91b0
+00000000000i[PLGIN] loaded plugin libbx_vga.la
+00000000000i[     ] lt_dlhandle is 0x8fb9348
+00000000000i[PLGIN] loaded plugin libbx_floppy.la
+00000000000i[     ] lt_dlhandle is 0x8fb9ec0
+00000000000i[PLGIN] loaded plugin libbx_harddrv.la
+00000000000i[     ] lt_dlhandle is 0x8fb97f0
+00000000000i[PLGIN] loaded plugin libbx_keyboard.la
+00000000000i[     ] lt_dlhandle is 0x8fcbba8
+00000000000i[PLGIN] loaded plugin libbx_serial.la
+00000000000i[     ] lt_dlhandle is 0x8fccd00
+00000000000i[PLGIN] loaded plugin libbx_parallel.la
+00000000000i[     ] lt_dlhandle is 0x8fccd78
+00000000000i[PLGIN] loaded plugin libbx_extfpuirq.la
+00000000000i[     ] lt_dlhandle is 0x8fcd750
+00000000000i[PLGIN] loaded plugin libbx_gameport.la
+00000000000i[     ] lt_dlhandle is 0x8fcdc60
+00000000000i[PLGIN] loaded plugin libbx_speaker.la
+00000000000i[     ] lt_dlhandle is 0x8fce150
+00000000000i[PLGIN] loaded plugin libbx_pci.la
+00000000000i[     ] lt_dlhandle is 0x8fce2c0
+00000000000i[PLGIN] loaded plugin libbx_pci2isa.la
+00000000000i[     ] lt_dlhandle is 0x8fceec8
+00000000000i[PLGIN] loaded plugin libbx_pci_ide.la
+00000000000i[CMOS ] Using local time for initial clock
+00000000000i[CMOS ] Setting initial clock to: Thu Mar 13 02:31:15 2008 (time0=1205355675)
+00000000000i[DMA  ] channel 4 used by cascade
+00000000000i[DMA  ] channel 2 used by Floppy Drive
+00000000000i[FDD  ] fd0: './brans_floppy.img' ro=0, h=2,t=80,spt=18
+00000000000i[PCI  ] 440FX Host bridge present at device 0, function 0
+00000000000i[PCI  ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
+00000000000i[MEM0 ] Register memory access handlers: 000a0000-000bffff
+00000000000i[XGUI ] test_alloc_colors: 16 colors available out of 16 colors tried
+00000000000i[XGUI ] font 8 wide x 16 high, display depth = 24
+00000000000i[MEM0 ] Register memory access handlers: e0000000-e07fffff
+00000000000i[CLVGA] VBE Bochs Display Extension Enabled
+00000000000i[CLVGA] interval=300000
+00000000000i[PLGIN] init_mem of 'harddrv' plugin device by virtual method
+00000000000i[PLGIN] init_mem of 'keyboard' plugin device by virtual method
+00000000000i[PLGIN] init_mem of 'serial' plugin device by virtual method
+00000000000i[PLGIN] init_mem of 'parallel' plugin device by virtual method
+00000000000i[PLGIN] init_mem of 'extfpuirq' plugin device by virtual method
+00000000000i[PLGIN] init_mem of 'gameport' plugin device by virtual method
+00000000000i[PLGIN] init_mem of 'speaker' plugin device by virtual method
+00000000000i[PLGIN] init_mem of 'pci_ide' plugin device by virtual method
+00000000000i[PLGIN] init_dev of 'harddrv' plugin device by virtual method
+00000000000i[HD   ] Using boot sequence floppy, none, none
+00000000000i[HD   ] Floppy boot signature check is enabled
+00000000000i[PLGIN] init_dev of 'keyboard' plugin device by virtual method
+00000000000i[KBD  ] will paste characters every 1000 keyboard ticks
+00000000000i[PLGIN] init_dev of 'serial' plugin device by virtual method
+00000000000i[SER  ] com1 at 0x03f8 irq 4
+00000000000i[PLGIN] init_dev of 'parallel' plugin device by virtual method
+00000000000i[PAR  ] parallel port 1 at 0x0378 irq 7
+00000000000i[PLGIN] init_dev of 'extfpuirq' plugin device by virtual method
+00000000000i[PLGIN] init_dev of 'gameport' plugin device by virtual method
+00000000000i[PLGIN] init_dev of 'speaker' plugin device by virtual method
+00000000000i[SPEAK] Open /dev/console successfully
+00000000000i[PLGIN] init_dev of 'pci_ide' plugin device by virtual method
+00000000000i[PCI  ] PIIX3 PCI IDE controller present at device 1, function 1
+00000000000i[PLGIN] register state of 'harddrv' plugin device by virtual method
+00000000000i[PLGIN] register state of 'keyboard' plugin device by virtual method
+00000000000i[PLGIN] register state of 'serial' plugin device by virtual method
+00000000000i[PLGIN] register state of 'parallel' plugin device by virtual method
+00000000000i[PLGIN] register state of 'extfpuirq' plugin device by virtual method
+00000000000i[PLGIN] register state of 'gameport' plugin device by virtual method
+00000000000i[PLGIN] register state of 'speaker' plugin device by virtual method
+00000000000i[PLGIN] register state of 'pci_ide' plugin device by virtual method
+00000000000i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00000000000i[PLGIN] reset of 'harddrv' plugin device by virtual method
+00000000000i[PLGIN] reset of 'keyboard' plugin device by virtual method
+00000000000i[PLGIN] reset of 'serial' plugin device by virtual method
+00000000000i[PLGIN] reset of 'parallel' plugin device by virtual method
+00000000000i[PLGIN] reset of 'extfpuirq' plugin device by virtual method
+00000000000i[PLGIN] reset of 'gameport' plugin device by virtual method
+00000000000i[PLGIN] reset of 'speaker' plugin device by virtual method
+00000000000i[PLGIN] reset of 'pci_ide' plugin device by virtual method
+00000000000i[XGUI ] [x] Mouse off
+00000002400e[CLVGA] character height = 1, skipping text update
+00000003442i[BIOS ] $Revision: 1.183 $ $Date: 2007/09/10 20:00:29 $
+00000004800e[CLVGA] character height = 1, skipping text update
+00000007200e[CLVGA] character height = 1, skipping text update
+00000009600e[CLVGA] character height = 1, skipping text update
+00000012000e[CLVGA] character height = 1, skipping text update
+00000014400e[CLVGA] character height = 1, skipping text update
+00000016800e[CLVGA] character height = 1, skipping text update
+00000019200e[CLVGA] character height = 1, skipping text update
+00000021600e[CLVGA] character height = 1, skipping text update
+00000024000e[CLVGA] character height = 1, skipping text update
+00000026400e[CLVGA] character height = 1, skipping text update
+00000028800e[CLVGA] character height = 1, skipping text update
+00000031200e[CLVGA] character height = 1, skipping text update
+00000033600e[CLVGA] character height = 1, skipping text update
+00000036000e[CLVGA] character height = 1, skipping text update
+00000038400e[CLVGA] character height = 1, skipping text update
+00000040800e[CLVGA] character height = 1, skipping text update
+00000043200e[CLVGA] character height = 1, skipping text update
+00000045600e[CLVGA] character height = 1, skipping text update
+00000048000e[CLVGA] character height = 1, skipping text update
+00000050400e[CLVGA] character height = 1, skipping text update
+00000052800e[CLVGA] character height = 1, skipping text update
+00000055200e[CLVGA] character height = 1, skipping text update
+00000057600e[CLVGA] character height = 1, skipping text update
+00000060000e[CLVGA] character height = 1, skipping text update
+00000062400e[CLVGA] character height = 1, skipping text update
+00000064800e[CLVGA] character height = 1, skipping text update
+00000067200e[CLVGA] character height = 1, skipping text update
+00000069600e[CLVGA] character height = 1, skipping text update
+00000072000e[CLVGA] character height = 1, skipping text update
+00000074400e[CLVGA] character height = 1, skipping text update
+00000076800e[CLVGA] character height = 1, skipping text update
+00000079200e[CLVGA] character height = 1, skipping text update
+00000081600e[CLVGA] character height = 1, skipping text update
+00000084000e[CLVGA] character height = 1, skipping text update
+00000086400e[CLVGA] character height = 1, skipping text update
+00000088800e[CLVGA] character height = 1, skipping text update
+00000091200e[CLVGA] character height = 1, skipping text update
+00000093600e[CLVGA] character height = 1, skipping text update
+00000096000e[CLVGA] character height = 1, skipping text update
+00000098400e[CLVGA] character height = 1, skipping text update
+00000100800e[CLVGA] character height = 1, skipping text update
+00000103200e[CLVGA] character height = 1, skipping text update
+00000105600e[CLVGA] character height = 1, skipping text update
+00000108000e[CLVGA] character height = 1, skipping text update
+00000110400e[CLVGA] character height = 1, skipping text update
+00000112800e[CLVGA] character height = 1, skipping text update
+00000115200e[CLVGA] character height = 1, skipping text update
+00000117600e[CLVGA] character height = 1, skipping text update
+00000120000e[CLVGA] character height = 1, skipping text update
+00000122400e[CLVGA] character height = 1, skipping text update
+00000124800e[CLVGA] character height = 1, skipping text update
+00000127200e[CLVGA] character height = 1, skipping text update
+00000129600e[CLVGA] character height = 1, skipping text update
+00000132000e[CLVGA] character height = 1, skipping text update
+00000134400e[CLVGA] character height = 1, skipping text update
+00000136800e[CLVGA] character height = 1, skipping text update
+00000139200e[CLVGA] character height = 1, skipping text update
+00000141600e[CLVGA] character height = 1, skipping text update
+00000144000e[CLVGA] character height = 1, skipping text update
+00000146400e[CLVGA] character height = 1, skipping text update
+00000148800e[CLVGA] character height = 1, skipping text update
+00000151200e[CLVGA] character height = 1, skipping text update
+00000153600e[CLVGA] character height = 1, skipping text update
+00000156000e[CLVGA] character height = 1, skipping text update
+00000158400e[CLVGA] character height = 1, skipping text update
+00000160800e[CLVGA] character height = 1, skipping text update
+00000163200e[CLVGA] character height = 1, skipping text update
+00000165600e[CLVGA] character height = 1, skipping text update
+00000168000e[CLVGA] character height = 1, skipping text update
+00000170400e[CLVGA] character height = 1, skipping text update
+00000172800e[CLVGA] character height = 1, skipping text update
+00000175200e[CLVGA] character height = 1, skipping text update
+00000177600e[CLVGA] character height = 1, skipping text update
+00000180000e[CLVGA] character height = 1, skipping text update
+00000182400e[CLVGA] character height = 1, skipping text update
+00000184800e[CLVGA] character height = 1, skipping text update
+00000187200e[CLVGA] character height = 1, skipping text update
+00000189600e[CLVGA] character height = 1, skipping text update
+00000192000e[CLVGA] character height = 1, skipping text update
+00000194400e[CLVGA] character height = 1, skipping text update
+00000196800e[CLVGA] character height = 1, skipping text update
+00000199200e[CLVGA] character height = 1, skipping text update
+00000201600e[CLVGA] character height = 1, skipping text update
+00000204000e[CLVGA] character height = 1, skipping text update
+00000206400e[CLVGA] character height = 1, skipping text update
+00000208800e[CLVGA] character height = 1, skipping text update
+00000211200e[CLVGA] character height = 1, skipping text update
+00000213600e[CLVGA] character height = 1, skipping text update
+00000216000e[CLVGA] character height = 1, skipping text update
+00000218400e[CLVGA] character height = 1, skipping text update
+00000220800e[CLVGA] character height = 1, skipping text update
+00000223200e[CLVGA] character height = 1, skipping text update
+00000225600e[CLVGA] character height = 1, skipping text update
+00000228000e[CLVGA] character height = 1, skipping text update
+00000230400e[CLVGA] character height = 1, skipping text update
+00000232800e[CLVGA] character height = 1, skipping text update
+00000235200e[CLVGA] character height = 1, skipping text update
+00000237600e[CLVGA] character height = 1, skipping text update
+00000240000e[CLVGA] character height = 1, skipping text update
+00000242400e[CLVGA] character height = 1, skipping text update
+00000244800e[CLVGA] character height = 1, skipping text update
+00000247200e[CLVGA] character height = 1, skipping text update
+00000249600e[CLVGA] character height = 1, skipping text update
+00000252000e[CLVGA] character height = 1, skipping text update
+00000254400e[CLVGA] character height = 1, skipping text update
+00000256800e[CLVGA] character height = 1, skipping text update
+00000259200e[CLVGA] character height = 1, skipping text update
+00000261600e[CLVGA] character height = 1, skipping text update
+00000264000e[CLVGA] character height = 1, skipping text update
+00000266400e[CLVGA] character height = 1, skipping text update
+00000268800e[CLVGA] character height = 1, skipping text update
+00000271200e[CLVGA] character height = 1, skipping text update
+00000273600e[CLVGA] character height = 1, skipping text update
+00000276000e[CLVGA] character height = 1, skipping text update
+00000278400e[CLVGA] character height = 1, skipping text update
+00000280800e[CLVGA] character height = 1, skipping text update
+00000283200e[CLVGA] character height = 1, skipping text update
+00000285600e[CLVGA] character height = 1, skipping text update
+00000288000e[CLVGA] character height = 1, skipping text update
+00000290400e[CLVGA] character height = 1, skipping text update
+00000292800e[CLVGA] character height = 1, skipping text update
+00000295200e[CLVGA] character height = 1, skipping text update
+00000297600e[CLVGA] character height = 1, skipping text update
+00000300000e[CLVGA] character height = 1, skipping text update
+00000302400e[CLVGA] character height = 1, skipping text update
+00000304800e[CLVGA] character height = 1, skipping text update
+00000307200e[CLVGA] character height = 1, skipping text update
+00000309600e[CLVGA] character height = 1, skipping text update
+00000312000e[CLVGA] character height = 1, skipping text update
+00000314400e[CLVGA] character height = 1, skipping text update
+00000316800e[CLVGA] character height = 1, skipping text update
+00000319200e[CLVGA] character height = 1, skipping text update
+00000321600e[CLVGA] character height = 1, skipping text update
+00000324000e[CLVGA] character height = 1, skipping text update
+00000326286i[KBD  ] reset-disable command received
+00000326400e[CLVGA] character height = 1, skipping text update
+00000328800e[CLVGA] character height = 1, skipping text update
+00000331200e[CLVGA] character height = 1, skipping text update
+00000333600e[CLVGA] character height = 1, skipping text update
+00000336000e[CLVGA] character height = 1, skipping text update
+00000338400e[CLVGA] character height = 1, skipping text update
+00000340800e[CLVGA] character height = 1, skipping text update
+00000343200e[CLVGA] character height = 1, skipping text update
+00000345600e[CLVGA] character height = 1, skipping text update
+00000348000e[CLVGA] character height = 1, skipping text update
+00000350400e[CLVGA] character height = 1, skipping text update
+00000352800e[CLVGA] character height = 1, skipping text update
+00000357600e[CLVGA] character height = 1, skipping text update
+00000360000e[CLVGA] character height = 1, skipping text update
+00000360003i[BIOS ] Starting rombios32
+00000360809i[BIOS ] ram_size=0x00f00000
+00000361418i[BIOS ] Found 1 cpu(s)
+00000362400e[CLVGA] character height = 1, skipping text update
+00000364800e[CLVGA] character height = 1, skipping text update
+00000367200e[CLVGA] character height = 1, skipping text update
+00000369600e[CLVGA] character height = 1, skipping text update
+00000372000e[CLVGA] character height = 1, skipping text update
+00000374400e[CLVGA] character height = 1, skipping text update
+00000376575i[BIOS ] bios_table_addr: 0x000fa938 end=0x000fe05b
+00000376800e[CLVGA] character height = 1, skipping text update
+00000379200e[CLVGA] character height = 1, skipping text update
+00000381600e[CLVGA] character height = 1, skipping text update
+00000384000e[CLVGA] character height = 1, skipping text update
+00000386400e[CLVGA] character height = 1, skipping text update
+00000388800e[CLVGA] character height = 1, skipping text update
+00000391200e[CLVGA] character height = 1, skipping text update
+00000393600e[CLVGA] character height = 1, skipping text update
+00000396000e[CLVGA] character height = 1, skipping text update
+00000398400e[CLVGA] character height = 1, skipping text update
+00000400800e[CLVGA] character height = 1, skipping text update
+00000403200e[CLVGA] character height = 1, skipping text update
+00000405600e[CLVGA] character height = 1, skipping text update
+00000408000e[CLVGA] character height = 1, skipping text update
+00000410400e[CLVGA] character height = 1, skipping text update
+00000412800e[CLVGA] character height = 1, skipping text update
+00000415200e[CLVGA] character height = 1, skipping text update
+00000417600e[CLVGA] character height = 1, skipping text update
+00000420000e[CLVGA] character height = 1, skipping text update
+00000422400e[CLVGA] character height = 1, skipping text update
+00000424800e[CLVGA] character height = 1, skipping text update
+00000427200e[CLVGA] character height = 1, skipping text update
+00000429600e[CLVGA] character height = 1, skipping text update
+00000432000e[CLVGA] character height = 1, skipping text update
+00000434400e[CLVGA] character height = 1, skipping text update
+00000436800e[CLVGA] character height = 1, skipping text update
+00000439200e[CLVGA] character height = 1, skipping text update
+00000441600e[CLVGA] character height = 1, skipping text update
+00000444000e[CLVGA] character height = 1, skipping text update
+00000446400e[CLVGA] character height = 1, skipping text update
+00000448800e[CLVGA] character height = 1, skipping text update
+00000451200e[CLVGA] character height = 1, skipping text update
+00000453600e[CLVGA] character height = 1, skipping text update
+00000456000e[CLVGA] character height = 1, skipping text update
+00000458400e[CLVGA] character height = 1, skipping text update
+00000460800e[CLVGA] character height = 1, skipping text update
+00000463200e[CLVGA] character height = 1, skipping text update
+00000465600e[CLVGA] character height = 1, skipping text update
+00000468000e[CLVGA] character height = 1, skipping text update
+00000470400e[CLVGA] character height = 1, skipping text update
+00000472800e[CLVGA] character height = 1, skipping text update
+00000475200e[CLVGA] character height = 1, skipping text update
+00000477600e[CLVGA] character height = 1, skipping text update
+00000480000e[CLVGA] character height = 1, skipping text update
+00000482400e[CLVGA] character height = 1, skipping text update
+00000484800e[CLVGA] character height = 1, skipping text update
+00000487200e[CLVGA] character height = 1, skipping text update
+00000489600e[CLVGA] character height = 1, skipping text update
+00000492000e[CLVGA] character height = 1, skipping text update
+00000494400e[CLVGA] character height = 1, skipping text update
+00000496800e[CLVGA] character height = 1, skipping text update
+00000499200e[CLVGA] character height = 1, skipping text update
+00000501600e[CLVGA] character height = 1, skipping text update
+00000504000e[CLVGA] character height = 1, skipping text update
+00000506400e[CLVGA] character height = 1, skipping text update
+00000508800e[CLVGA] character height = 1, skipping text update
+00000511200e[CLVGA] character height = 1, skipping text update
+00000513600e[CLVGA] character height = 1, skipping text update
+00000516000e[CLVGA] character height = 1, skipping text update
+00000518400e[CLVGA] character height = 1, skipping text update
+00000520800e[CLVGA] character height = 1, skipping text update
+00000523200e[CLVGA] character height = 1, skipping text update
+00000525600e[CLVGA] character height = 1, skipping text update
+00000528000e[CLVGA] character height = 1, skipping text update
+00000530400e[CLVGA] character height = 1, skipping text update
+00000532800e[CLVGA] character height = 1, skipping text update
+00000535200e[CLVGA] character height = 1, skipping text update
+00000537600e[CLVGA] character height = 1, skipping text update
+00000540000e[CLVGA] character height = 1, skipping text update
+00000542400e[CLVGA] character height = 1, skipping text update
+00000544800e[CLVGA] character height = 1, skipping text update
+00000547200e[CLVGA] character height = 1, skipping text update
+00000549600e[CLVGA] character height = 1, skipping text update
+00000552000e[CLVGA] character height = 1, skipping text update
+00000554400e[CLVGA] character height = 1, skipping text update
+00000556800e[CLVGA] character height = 1, skipping text update
+00000559200e[CLVGA] character height = 1, skipping text update
+00000561600e[CLVGA] character height = 1, skipping text update
+00000564000e[CLVGA] character height = 1, skipping text update
+00000566400e[CLVGA] character height = 1, skipping text update
+00000568800e[CLVGA] character height = 1, skipping text update
+00000571200e[CLVGA] character height = 1, skipping text update
+00000573600e[CLVGA] character height = 1, skipping text update
+00000576000e[CLVGA] character height = 1, skipping text update
+00000578400e[CLVGA] character height = 1, skipping text update
+00000580800e[CLVGA] character height = 1, skipping text update
+00000583200e[CLVGA] character height = 1, skipping text update
+00000585600e[CLVGA] character height = 1, skipping text update
+00000588000e[CLVGA] character height = 1, skipping text update
+00000590400e[CLVGA] character height = 1, skipping text update
+00000592800e[CLVGA] character height = 1, skipping text update
+00000595200e[CLVGA] character height = 1, skipping text update
+00000597600e[CLVGA] character height = 1, skipping text update
+00000600000e[CLVGA] character height = 1, skipping text update
+00000602400e[CLVGA] character height = 1, skipping text update
+00000604800e[CLVGA] character height = 1, skipping text update
+00000607200e[CLVGA] character height = 1, skipping text update
+00000609600e[CLVGA] character height = 1, skipping text update
+00000612000e[CLVGA] character height = 1, skipping text update
+00000614400e[CLVGA] character height = 1, skipping text update
+00000616800e[CLVGA] character height = 1, skipping text update
+00000619200e[CLVGA] character height = 1, skipping text update
+00000621600e[CLVGA] character height = 1, skipping text update
+00000624000e[CLVGA] character height = 1, skipping text update
+00000626400e[CLVGA] character height = 1, skipping text update
+00000628800e[CLVGA] character height = 1, skipping text update
+00000631200e[CLVGA] character height = 1, skipping text update
+00000633600e[CLVGA] character height = 1, skipping text update
+00000636000e[CLVGA] character height = 1, skipping text update
+00000638400e[CLVGA] character height = 1, skipping text update
+00000640800e[CLVGA] character height = 1, skipping text update
+00000643200e[CLVGA] character height = 1, skipping text update
+00000645600e[CLVGA] character height = 1, skipping text update
+00000648000e[CLVGA] character height = 1, skipping text update
+00000650400e[CLVGA] character height = 1, skipping text update
+00000652800e[CLVGA] character height = 1, skipping text update
+00000655200e[CLVGA] character height = 1, skipping text update
+00000657600e[CLVGA] character height = 1, skipping text update
+00000660000e[CLVGA] character height = 1, skipping text update
+00000662400e[CLVGA] character height = 1, skipping text update
+00000664800e[CLVGA] character height = 1, skipping text update
+00000667200e[CLVGA] character height = 1, skipping text update
+00000669600e[CLVGA] character height = 1, skipping text update
+00000672000e[CLVGA] character height = 1, skipping text update
+00000674400e[CLVGA] character height = 1, skipping text update
+00000676800e[CLVGA] character height = 1, skipping text update
+00000679200e[CLVGA] character height = 1, skipping text update
+00000681600e[CLVGA] character height = 1, skipping text update
+00000684000e[CLVGA] character height = 1, skipping text update
+00000686400e[CLVGA] character height = 1, skipping text update
+00000688800e[CLVGA] character height = 1, skipping text update
+00000691200e[CLVGA] character height = 1, skipping text update
+00000693600e[CLVGA] character height = 1, skipping text update
+00000696000e[CLVGA] character height = 1, skipping text update
+00000700800e[CLVGA] character height = 1, skipping text update
+00000703200e[CLVGA] character height = 1, skipping text update
+00000705600e[CLVGA] character height = 1, skipping text update
+00000708000e[CLVGA] character height = 1, skipping text update
+00000710400e[CLVGA] character height = 1, skipping text update
+00000712800e[CLVGA] character height = 1, skipping text update
+00000715200e[CLVGA] character height = 1, skipping text update
+00000717600e[CLVGA] character height = 1, skipping text update
+00000720000e[CLVGA] character height = 1, skipping text update
+00000722400e[CLVGA] character height = 1, skipping text update
+00000724800e[CLVGA] character height = 1, skipping text update
+00000727200e[CLVGA] character height = 1, skipping text update
+00000729600e[CLVGA] character height = 1, skipping text update
+00000732000e[CLVGA] character height = 1, skipping text update
+00000734400e[CLVGA] character height = 1, skipping text update
+00000736800e[CLVGA] character height = 1, skipping text update
+00000739200e[CLVGA] character height = 1, skipping text update
+00000741600e[CLVGA] character height = 1, skipping text update
+00000744000e[CLVGA] character height = 1, skipping text update
+00000746400e[CLVGA] character height = 1, skipping text update
+00000748800e[CLVGA] character height = 1, skipping text update
+00000751200e[CLVGA] character height = 1, skipping text update
+00000753600e[CLVGA] character height = 1, skipping text update
+00000756000e[CLVGA] character height = 1, skipping text update
+00000758400e[CLVGA] character height = 1, skipping text update
+00000760800e[CLVGA] character height = 1, skipping text update
+00000763200e[CLVGA] character height = 1, skipping text update
+00000765600e[CLVGA] character height = 1, skipping text update
+00000768000e[CLVGA] character height = 1, skipping text update
+00000770400e[CLVGA] character height = 1, skipping text update
+00000772800e[CLVGA] character height = 1, skipping text update
+00000775200e[CLVGA] character height = 1, skipping text update
+00000777600e[CLVGA] character height = 1, skipping text update
+00000780000e[CLVGA] character height = 1, skipping text update
+00000782400e[CLVGA] character height = 1, skipping text update
+00000784800e[CLVGA] character height = 1, skipping text update
+00000787200e[CLVGA] character height = 1, skipping text update
+00000789600e[CLVGA] character height = 1, skipping text update
+00000792000e[CLVGA] character height = 1, skipping text update
+00000794400e[CLVGA] character height = 1, skipping text update
+00000796800e[CLVGA] character height = 1, skipping text update
+00000799200e[CLVGA] character height = 1, skipping text update
+00000801600e[CLVGA] character height = 1, skipping text update
+00000804000e[CLVGA] character height = 1, skipping text update
+00000806400e[CLVGA] character height = 1, skipping text update
+00000808800e[CLVGA] character height = 1, skipping text update
+00000811200e[CLVGA] character height = 1, skipping text update
+00000813600e[CLVGA] character height = 1, skipping text update
+00000816000e[CLVGA] character height = 1, skipping text update
+00000818400e[CLVGA] character height = 1, skipping text update
+00000820800e[CLVGA] character height = 1, skipping text update
+00000823200e[CLVGA] character height = 1, skipping text update
+00000825600e[CLVGA] character height = 1, skipping text update
+00000828000e[CLVGA] character height = 1, skipping text update
+00000830400e[CLVGA] character height = 1, skipping text update
+00000832800e[CLVGA] character height = 1, skipping text update
+00000835200e[CLVGA] character height = 1, skipping text update
+00000835414i[PCI  ] 440FX PMC write to PAM register 59 (TLB Flush)
+00000837600e[CLVGA] character height = 1, skipping text update
+00000840000e[CLVGA] character height = 1, skipping text update
+00000842400e[CLVGA] character height = 1, skipping text update
+00000844800e[CLVGA] character height = 1, skipping text update
+00000847200e[CLVGA] character height = 1, skipping text update
+00000849600e[CLVGA] character height = 1, skipping text update
+00000852000e[CLVGA] character height = 1, skipping text update
+00000854400e[CLVGA] character height = 1, skipping text update
+00000856800e[CLVGA] character height = 1, skipping text update
+00000859200e[CLVGA] character height = 1, skipping text update
+00000861600e[CLVGA] character height = 1, skipping text update
+00000864000e[CLVGA] character height = 1, skipping text update
+00000866400e[CLVGA] character height = 1, skipping text update
+00000868800e[CLVGA] character height = 1, skipping text update
+00000871200e[CLVGA] character height = 1, skipping text update
+00000873600e[CLVGA] character height = 1, skipping text update
+00000876000e[CLVGA] character height = 1, skipping text update
+00000878400e[CLVGA] character height = 1, skipping text update
+00000880800e[CLVGA] character height = 1, skipping text update
+00000883200e[CLVGA] character height = 1, skipping text update
+00000885600e[CLVGA] character height = 1, skipping text update
+00000888000e[CLVGA] character height = 1, skipping text update
+00000890400e[CLVGA] character height = 1, skipping text update
+00000892800e[CLVGA] character height = 1, skipping text update
+00000895200e[CLVGA] character height = 1, skipping text update
+00000897600e[CLVGA] character height = 1, skipping text update
+00000900000e[CLVGA] character height = 1, skipping text update
+00000902400e[CLVGA] character height = 1, skipping text update
+00000904800e[CLVGA] character height = 1, skipping text update
+00000907200e[CLVGA] character height = 1, skipping text update
+00000909600e[CLVGA] character height = 1, skipping text update
+00000912000e[CLVGA] character height = 1, skipping text update
+00000914400e[CLVGA] character height = 1, skipping text update
+00000916800e[CLVGA] character height = 1, skipping text update
+00000919200e[CLVGA] character height = 1, skipping text update
+00000921600e[CLVGA] character height = 1, skipping text update
+00000924000e[CLVGA] character height = 1, skipping text update
+00000926400e[CLVGA] character height = 1, skipping text update
+00000928800e[CLVGA] character height = 1, skipping text update
+00000931200e[CLVGA] character height = 1, skipping text update
+00000933600e[CLVGA] character height = 1, skipping text update
+00000936000e[CLVGA] character height = 1, skipping text update
+00000938400e[CLVGA] character height = 1, skipping text update
+00000940800e[CLVGA] character height = 1, skipping text update
+00000943200e[CLVGA] character height = 1, skipping text update
+00000945600e[CLVGA] character height = 1, skipping text update
+00000948000e[CLVGA] character height = 1, skipping text update
+00000950400e[CLVGA] character height = 1, skipping text update
+00000952800e[CLVGA] character height = 1, skipping text update
+00000955200e[CLVGA] character height = 1, skipping text update
+00000957600e[CLVGA] character height = 1, skipping text update
+00000960000e[CLVGA] character height = 1, skipping text update
+00000962400e[CLVGA] character height = 1, skipping text update
+00000964800e[CLVGA] character height = 1, skipping text update
+00000967200e[CLVGA] character height = 1, skipping text update
+00000969600e[CLVGA] character height = 1, skipping text update
+00000972000e[CLVGA] character height = 1, skipping text update
+00000974400e[CLVGA] character height = 1, skipping text update
+00000976800e[CLVGA] character height = 1, skipping text update
+00000979200e[CLVGA] character height = 1, skipping text update
+00000981600e[CLVGA] character height = 1, skipping text update
+00000984000e[CLVGA] character height = 1, skipping text update
+00000986400e[CLVGA] character height = 1, skipping text update
+00000988800e[CLVGA] character height = 1, skipping text update
+00000991200e[CLVGA] character height = 1, skipping text update
+00000993600e[CLVGA] character height = 1, skipping text update
+00000996000e[CLVGA] character height = 1, skipping text update
+00000998400e[CLVGA] character height = 1, skipping text update
+00001000800e[CLVGA] character height = 1, skipping text update
+00001003200e[CLVGA] character height = 1, skipping text update
+00001005600e[CLVGA] character height = 1, skipping text update
+00001008000e[CLVGA] character height = 1, skipping text update
+00001010400e[CLVGA] character height = 1, skipping text update
+00001012800e[CLVGA] character height = 1, skipping text update
+00001015200e[CLVGA] character height = 1, skipping text update
+00001017600e[CLVGA] character height = 1, skipping text update
+00001020000e[CLVGA] character height = 1, skipping text update
+00001022400e[CLVGA] character height = 1, skipping text update
+00001024800e[CLVGA] character height = 1, skipping text update
+00001027200e[CLVGA] character height = 1, skipping text update
+00001029600e[CLVGA] character height = 1, skipping text update
+00001032000e[CLVGA] character height = 1, skipping text update
+00001034400e[CLVGA] character height = 1, skipping text update
+00001036800e[CLVGA] character height = 1, skipping text update
+00001039200e[CLVGA] character height = 1, skipping text update
+00001044000e[CLVGA] character height = 1, skipping text update
+00001046400e[CLVGA] character height = 1, skipping text update
+00001048800e[CLVGA] character height = 1, skipping text update
+00001051200e[CLVGA] character height = 1, skipping text update
+00001053600e[CLVGA] character height = 1, skipping text update
+00001056000e[CLVGA] character height = 1, skipping text update
+00001058400e[CLVGA] character height = 1, skipping text update
+00001060800e[CLVGA] character height = 1, skipping text update
+00001063200e[CLVGA] character height = 1, skipping text update
+00001065600e[CLVGA] character height = 1, skipping text update
+00001068000e[CLVGA] character height = 1, skipping text update
+00001070400e[CLVGA] character height = 1, skipping text update
+00001072800e[CLVGA] character height = 1, skipping text update
+00001075200e[CLVGA] character height = 1, skipping text update
+00001077600e[CLVGA] character height = 1, skipping text update
+00001080000e[CLVGA] character height = 1, skipping text update
+00001082400e[CLVGA] character height = 1, skipping text update
+00001084800e[CLVGA] character height = 1, skipping text update
+00001087200e[CLVGA] character height = 1, skipping text update
+00001089600e[CLVGA] character height = 1, skipping text update
+00001092000e[CLVGA] character height = 1, skipping text update
+00001094400e[CLVGA] character height = 1, skipping text update
+00001096800e[CLVGA] character height = 1, skipping text update
+00001099200e[CLVGA] character height = 1, skipping text update
+00001101600e[CLVGA] character height = 1, skipping text update
+00001104000e[CLVGA] character height = 1, skipping text update
+00001106400e[CLVGA] character height = 1, skipping text update
+00001108800e[CLVGA] character height = 1, skipping text update
+00001111200e[CLVGA] character height = 1, skipping text update
+00001113600e[CLVGA] character height = 1, skipping text update
+00001116000e[CLVGA] character height = 1, skipping text update
+00001118400e[CLVGA] character height = 1, skipping text update
+00001120800e[CLVGA] character height = 1, skipping text update
+00001123200e[CLVGA] character height = 1, skipping text update
+00001125600e[CLVGA] character height = 1, skipping text update
+00001128000e[CLVGA] character height = 1, skipping text update
+00001130400e[CLVGA] character height = 1, skipping text update
+00001132800e[CLVGA] character height = 1, skipping text update
+00001135200e[CLVGA] character height = 1, skipping text update
+00001137600e[CLVGA] character height = 1, skipping text update
+00001140000e[CLVGA] character height = 1, skipping text update
+00001142400e[CLVGA] character height = 1, skipping text update
+00001144800e[CLVGA] character height = 1, skipping text update
+00001147200e[CLVGA] character height = 1, skipping text update
+00001149600e[CLVGA] character height = 1, skipping text update
+00001152000e[CLVGA] character height = 1, skipping text update
+00001154400e[CLVGA] character height = 1, skipping text update
+00001156800e[CLVGA] character height = 1, skipping text update
+00001159200e[CLVGA] character height = 1, skipping text update
+00001161600e[CLVGA] character height = 1, skipping text update
+00001164000e[CLVGA] character height = 1, skipping text update
+00001166400e[CLVGA] character height = 1, skipping text update
+00001168800e[CLVGA] character height = 1, skipping text update
+00001171200e[CLVGA] character height = 1, skipping text update
+00001173600e[CLVGA] character height = 1, skipping text update
+00001176000e[CLVGA] character height = 1, skipping text update
+00001178400e[CLVGA] character height = 1, skipping text update
+00001180800e[CLVGA] character height = 1, skipping text update
+00001183200e[CLVGA] character height = 1, skipping text update
+00001185600e[CLVGA] character height = 1, skipping text update
+00001188000e[CLVGA] character height = 1, skipping text update
+00001190400e[CLVGA] character height = 1, skipping text update
+00001192800e[CLVGA] character height = 1, skipping text update
+00001195200e[CLVGA] character height = 1, skipping text update
+00001197600e[CLVGA] character height = 1, skipping text update
+00001200000e[CLVGA] character height = 1, skipping text update
+00001202400e[CLVGA] character height = 1, skipping text update
+00001204800e[CLVGA] character height = 1, skipping text update
+00001207200e[CLVGA] character height = 1, skipping text update
+00001209600e[CLVGA] character height = 1, skipping text update
+00001212000e[CLVGA] character height = 1, skipping text update
+00001214400e[CLVGA] character height = 1, skipping text update
+00001216800e[CLVGA] character height = 1, skipping text update
+00001219200e[CLVGA] character height = 1, skipping text update
+00001221600e[CLVGA] character height = 1, skipping text update
+00001224000e[CLVGA] character height = 1, skipping text update
+00001226400e[CLVGA] character height = 1, skipping text update
+00001228800e[CLVGA] character height = 1, skipping text update
+00001231200e[CLVGA] character height = 1, skipping text update
+00001233600e[CLVGA] character height = 1, skipping text update
+00001236000e[CLVGA] character height = 1, skipping text update
+00001238400e[CLVGA] character height = 1, skipping text update
+00001240800e[CLVGA] character height = 1, skipping text update
+00001243200e[CLVGA] character height = 1, skipping text update
+00001245600e[CLVGA] character height = 1, skipping text update
+00001248000e[CLVGA] character height = 1, skipping text update
+00001250400e[CLVGA] character height = 1, skipping text update
+00001252800e[CLVGA] character height = 1, skipping text update
+00001255200e[CLVGA] character height = 1, skipping text update
+00001257600e[CLVGA] character height = 1, skipping text update
+00001260000e[CLVGA] character height = 1, skipping text update
+00001262400e[CLVGA] character height = 1, skipping text update
+00001264800e[CLVGA] character height = 1, skipping text update
+00001267200e[CLVGA] character height = 1, skipping text update
+00001269600e[CLVGA] character height = 1, skipping text update
+00001272000e[CLVGA] character height = 1, skipping text update
+00001274400e[CLVGA] character height = 1, skipping text update
+00001276800e[CLVGA] character height = 1, skipping text update
+00001279200e[CLVGA] character height = 1, skipping text update
+00001281600e[CLVGA] character height = 1, skipping text update
+00001284000e[CLVGA] character height = 1, skipping text update
+00001286400e[CLVGA] character height = 1, skipping text update
+00001288800e[CLVGA] character height = 1, skipping text update
+00001291200e[CLVGA] character height = 1, skipping text update
+00001293600e[CLVGA] character height = 1, skipping text update
+00001294901i[P2I  ] PCI IRQ routing: PIRQA# set to 0x0b
+00001294948i[P2I  ] PCI IRQ routing: PIRQB# set to 0x09
+00001294995i[P2I  ] PCI IRQ routing: PIRQC# set to 0x0b
+00001295042i[P2I  ] PCI IRQ routing: PIRQD# set to 0x09
+00001295058i[P2I  ] write: ELCR2 = 0x0a
+00001295991i[BIOS ] PIIX3 init: elcr=00 0a
+00001296000e[CLVGA] character height = 1, skipping text update
+00001298400e[CLVGA] character height = 1, skipping text update
+00001300800e[CLVGA] character height = 1, skipping text update
+00001303200e[CLVGA] character height = 1, skipping text update
+00001305600e[CLVGA] character height = 1, skipping text update
+00001308000e[CLVGA] character height = 1, skipping text update
+00001310400e[CLVGA] character height = 1, skipping text update
+00001312800e[CLVGA] character height = 1, skipping text update
+00001315200e[CLVGA] character height = 1, skipping text update
+00001316152i[BIOS ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237
+00001317600e[CLVGA] character height = 1, skipping text update
+00001319385i[BIOS ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000
+00001320000e[CLVGA] character height = 1, skipping text update
+00001322114i[BIOS ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010
+00001322400e[CLVGA] character height = 1, skipping text update
+00001322575i[PIDE ] new BM-DMA address: 0xc000
+00001323454i[BIOS ] region 4: 0x0000c000
+00001324800e[CLVGA] character height = 1, skipping text update
+00001327200e[CLVGA] character height = 1, skipping text update
+00001329600e[CLVGA] character height = 1, skipping text update
+00001332000e[CLVGA] character height = 1, skipping text update
+00001334400e[CLVGA] character height = 1, skipping text update
+00001336800e[CLVGA] character height = 1, skipping text update
+00001339200e[CLVGA] character height = 1, skipping text update
+00001341600e[CLVGA] character height = 1, skipping text update
+00001344000e[CLVGA] character height = 1, skipping text update
+00001346400e[CLVGA] character height = 1, skipping text update
+00001347112i[BIOS ] MP table addr=0x000faa10 MPC table addr=0x000fa940 size=0xd0
+00001347182i[PCI  ] 440FX PMC write to PAM register 59 (TLB Flush)
+00001348800e[CLVGA] character height = 1, skipping text update
+00001351200e[CLVGA] character height = 1, skipping text update
+00001353600e[CLVGA] character height = 1, skipping text update
+00001356000e[CLVGA] character height = 1, skipping text update
+00001358400e[CLVGA] character height = 1, skipping text update
+00001360800e[CLVGA] character height = 1, skipping text update
+00001363200e[CLVGA] character height = 1, skipping text update
+00001365600e[CLVGA] character height = 1, skipping text update
+00001368000e[CLVGA] character height = 1, skipping text update
+00001370400e[CLVGA] character height = 1, skipping text update
+00001372800e[CLVGA] character height = 1, skipping text update
+00001375200e[CLVGA] character height = 1, skipping text update
+00001377600e[CLVGA] character height = 1, skipping text update
+00001380000e[CLVGA] character height = 1, skipping text update
+00001382400e[CLVGA] character height = 1, skipping text update
+00001384800e[CLVGA] character height = 1, skipping text update
+00001387200e[CLVGA] character height = 1, skipping text update
+00001389600e[CLVGA] character height = 1, skipping text update
+00001392000e[CLVGA] character height = 1, skipping text update
+00001394400e[CLVGA] character height = 1, skipping text update
+00001399200e[CLVGA] character height = 1, skipping text update
+00001401600e[CLVGA] character height = 1, skipping text update
+00001404000e[CLVGA] character height = 1, skipping text update
+00001406400e[CLVGA] character height = 1, skipping text update
+00001408800e[CLVGA] character height = 1, skipping text update
+00001411200e[CLVGA] character height = 1, skipping text update
+00001413600e[CLVGA] character height = 1, skipping text update
+00001416000e[CLVGA] character height = 1, skipping text update
+00001418400e[CLVGA] character height = 1, skipping text update
+00001420800e[CLVGA] character height = 1, skipping text update
+00001423200e[CLVGA] character height = 1, skipping text update
+00001425600e[CLVGA] character height = 1, skipping text update
+00001428000e[CLVGA] character height = 1, skipping text update
+00001430400e[CLVGA] character height = 1, skipping text update
+00001432800e[CLVGA] character height = 1, skipping text update
+00001435200e[CLVGA] character height = 1, skipping text update
+00001437600e[CLVGA] character height = 1, skipping text update
+00001440000e[CLVGA] character height = 1, skipping text update
+00001442400e[CLVGA] character height = 1, skipping text update
+00001444800e[CLVGA] character height = 1, skipping text update
+00001447200e[CLVGA] character height = 1, skipping text update
+00001449600e[CLVGA] character height = 1, skipping text update
+00001452000e[CLVGA] character height = 1, skipping text update
+00001454400e[CLVGA] character height = 1, skipping text update
+00001456800e[CLVGA] character height = 1, skipping text update
+00001459200e[CLVGA] character height = 1, skipping text update
+00001461600e[CLVGA] character height = 1, skipping text update
+00001464000e[CLVGA] character height = 1, skipping text update
+00001466400e[CLVGA] character height = 1, skipping text update
+00001468800e[CLVGA] character height = 1, skipping text update
+00001471200e[CLVGA] character height = 1, skipping text update
+00001473600e[CLVGA] character height = 1, skipping text update
+00001476000e[CLVGA] character height = 1, skipping text update
+00001478400e[CLVGA] character height = 1, skipping text update
+00001480800e[CLVGA] character height = 1, skipping text update
+00001483200e[CLVGA] character height = 1, skipping text update
+00001485600e[CLVGA] character height = 1, skipping text update
+00001488000e[CLVGA] character height = 1, skipping text update
+00001490400e[CLVGA] character height = 1, skipping text update
+00001492800e[CLVGA] character height = 1, skipping text update
+00001495200e[CLVGA] character height = 1, skipping text update
+00001497600e[CLVGA] character height = 1, skipping text update
+00001500000e[CLVGA] character height = 1, skipping text update
+00001502400e[CLVGA] character height = 1, skipping text update
+00001504800e[CLVGA] character height = 1, skipping text update
+00001507200e[CLVGA] character height = 1, skipping text update
+00001509600e[CLVGA] character height = 1, skipping text update
+00001512000e[CLVGA] character height = 1, skipping text update
+00001514400e[CLVGA] character height = 1, skipping text update
+00001516800e[CLVGA] character height = 1, skipping text update
+00001519200e[CLVGA] character height = 1, skipping text update
+00001521600e[CLVGA] character height = 1, skipping text update
+00001524000e[CLVGA] character height = 1, skipping text update
+00001526400e[CLVGA] character height = 1, skipping text update
+00001528800e[CLVGA] character height = 1, skipping text update
+00001531200e[CLVGA] character height = 1, skipping text update
+00001533600e[CLVGA] character height = 1, skipping text update
+00001536000e[CLVGA] character height = 1, skipping text update
+00001538400e[CLVGA] character height = 1, skipping text update
+00001540800e[CLVGA] character height = 1, skipping text update
+00001543200e[CLVGA] character height = 1, skipping text update
+00001545600e[CLVGA] character height = 1, skipping text update
+00001548000e[CLVGA] character height = 1, skipping text update
+00001550400e[CLVGA] character height = 1, skipping text update
+00001552800e[CLVGA] character height = 1, skipping text update
+00001555200e[CLVGA] character height = 1, skipping text update
+00001557600e[CLVGA] character height = 1, skipping text update
+00001560000e[CLVGA] character height = 1, skipping text update
+00001562400e[CLVGA] character height = 1, skipping text update
+00001564800e[CLVGA] character height = 1, skipping text update
+00001567200e[CLVGA] character height = 1, skipping text update
+00001569600e[CLVGA] character height = 1, skipping text update
+00001572000e[CLVGA] character height = 1, skipping text update
+00001574400e[CLVGA] character height = 1, skipping text update
+00001576800e[CLVGA] character height = 1, skipping text update
+00001579200e[CLVGA] character height = 1, skipping text update
+00001581600e[CLVGA] character height = 1, skipping text update
+00001584000e[CLVGA] character height = 1, skipping text update
+00001586400e[CLVGA] character height = 1, skipping text update
+00001588800e[CLVGA] character height = 1, skipping text update
+00001591200e[CLVGA] character height = 1, skipping text update
+00001593600e[CLVGA] character height = 1, skipping text update
+00001596000e[CLVGA] character height = 1, skipping text update
+00001597522i[VBIOS] VGABios $Id: vgabios.c,v 1.66 2006/07/10 07:47:51 vruppert Exp $
+00001597593i[CLVGA] VBE known Display Interface b0c0
+00001597625i[CLVGA] VBE known Display Interface b0c4
+00001598400e[CLVGA] character height = 1, skipping text update
+00001600550i[VBIOS] VBE Bios $Id: vbe.c,v 1.58 2006/08/19 09:39:43 vruppert Exp $
+00001600800e[CLVGA] character height = 1, skipping text update
+00001603200e[CLVGA] character height = 1, skipping text update
+00001605600e[CLVGA] character height = 1, skipping text update
+00001608000e[CLVGA] character height = 1, skipping text update
+00001610400e[CLVGA] character height = 1, skipping text update
+00001612800e[CLVGA] character height = 1, skipping text update
+00001615200e[CLVGA] character height = 1, skipping text update
+00001617600e[CLVGA] character height = 1, skipping text update
+00001620000e[CLVGA] character height = 1, skipping text update
+00001660800i[XGUI ] charmap update. Font Height is 16
+00001663200i[XGUI ] charmap update. Font Height is 16
+00001665600i[XGUI ] charmap update. Font Height is 16
+00001668000i[XGUI ] charmap update. Font Height is 16
+00001670400i[XGUI ] charmap update. Font Height is 16
+00001672800i[XGUI ] charmap update. Font Height is 16
+00001675200i[XGUI ] charmap update. Font Height is 16
+00001677600i[XGUI ] charmap update. Font Height is 16
+00001680000i[XGUI ] charmap update. Font Height is 16
+00001682400i[XGUI ] charmap update. Font Height is 16
+00001958929i[BIOS ] Booting from 0000:7C00
+00002364000i[XGUI ] charmap update. Font Height is 16
+00002400000i[XGUI ] charmap update. Font Height is 16
+00002402400i[XGUI ] charmap update. Font Height is 16
+00002404800i[XGUI ] charmap update. Font Height is 16
+00002407200i[XGUI ] charmap update. Font Height is 16
+00002409600i[XGUI ] charmap update. Font Height is 16
+00002412000i[XGUI ] charmap update. Font Height is 16
+00002414400i[XGUI ] charmap update. Font Height is 16
+00002416800i[XGUI ] charmap update. Font Height is 16
+00002419200i[XGUI ] charmap update. Font Height is 16
+00002421600i[XGUI ] charmap update. Font Height is 16
+00002443200i[XGUI ] charmap update. Font Height is 16
+00002479200i[XGUI ] charmap update. Font Height is 16
+00002481600i[XGUI ] charmap update. Font Height is 16
+00002484000i[XGUI ] charmap update. Font Height is 16
+00002486400i[XGUI ] charmap update. Font Height is 16
+00002488800i[XGUI ] charmap update. Font Height is 16
+00002491200i[XGUI ] charmap update. Font Height is 16
+00002493600i[XGUI ] charmap update. Font Height is 16
+00002496000i[XGUI ] charmap update. Font Height is 16
+00002498400i[XGUI ] charmap update. Font Height is 16
+00002500800i[XGUI ] charmap update. Font Height is 16
+00006525600i[XGUI ] charmap update. Font Height is 16
+00006559200i[XGUI ] charmap update. Font Height is 16
+00006561600i[XGUI ] charmap update. Font Height is 16
+00006564000i[XGUI ] charmap update. Font Height is 16
+00006566400i[XGUI ] charmap update. Font Height is 16
+00006568800i[XGUI ] charmap update. Font Height is 16
+00006571200i[XGUI ] charmap update. Font Height is 16
+00006573600i[XGUI ] charmap update. Font Height is 16
+00006576000i[XGUI ] charmap update. Font Height is 16
+00006578400i[XGUI ] charmap update. Font Height is 16
+00006580800i[XGUI ] charmap update. Font Height is 16
+00006583200i[XGUI ] charmap update. Font Height is 16
+00007118400i[XGUI ] charmap update. Font Height is 16
+00007154400i[XGUI ] charmap update. Font Height is 16
+00007156800i[XGUI ] charmap update. Font Height is 16
+00007159200i[XGUI ] charmap update. Font Height is 16
+00007161600i[XGUI ] charmap update. Font Height is 16
+00007164000i[XGUI ] charmap update. Font Height is 16
+00007166400i[XGUI ] charmap update. Font Height is 16
+00007168800i[XGUI ] charmap update. Font Height is 16
+00007171200i[XGUI ] charmap update. Font Height is 16
+00007173600i[XGUI ] charmap update. Font Height is 16
+00007176000i[XGUI ] charmap update. Font Height is 16
+00022152400p[XGUI ] >>PANIC<< POWER button turned off.
+00022152400i[CPU  ] protected mode
+00022152400i[CPU  ] CS.d_b = 32 bit
+00022152400i[CPU  ] SS.d_b = 32 bit
+00022152400i[CPU  ] | EAX=0000001b  EBX=00026260  ECX=00000f00  EDX=00104139
+00022152400i[CPU  ] | ESP=00106f78  EBP=00067edc  ESI=00000000  EDI=000263e0
+00022152400i[CPU  ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf zf af PF cf
+00022152400i[CPU  ] | SEG selector     base    limit G D
+00022152400i[CPU  ] | SEG sltr(index|ti|rpl)     base    limit G D
+00022152400i[CPU  ] |  CS:0008( 0001| 0|  0) 00000000 000fffff 1 1
+00022152400i[CPU  ] |  DS:0010( 0002| 0|  0) 00000000 000fffff 1 1
+00022152400i[CPU  ] |  SS:0010( 0002| 0|  0) 00000000 000fffff 1 1
+00022152400i[CPU  ] |  ES:0010( 0002| 0|  0) 00000000 000fffff 1 1
+00022152400i[CPU  ] |  FS:0010( 0002| 0|  0) 00000000 000fffff 1 1
+00022152400i[CPU  ] |  GS:0010( 0002| 0|  0) 00000000 000fffff 1 1
+00022152400i[CPU  ] | EIP=001012ea (001012ea)
+00022152400i[CPU  ] | CR0=0x80000011 CR1=0 CR2=0x00000000
+00022152400i[CPU  ] | CR3=0x0010a000 CR4=0x00000000
+00022152400i[CPU  ] >> jmp .+0xfffffffe (0x001012ea) : EBFE
+00022152400i[CMOS ] Last time is 1205358444 (Thu Mar 13 03:17:24 2008)
+00022152400i[XGUI ] Exit.
+00022152400i[     ] restoring default signal behavior
+00022152400i[CTRL ] quit_sim called with exit code 1
