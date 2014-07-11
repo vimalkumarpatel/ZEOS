@@ -1,0 +1,96 @@
+#include<system.h>
+
+int MAX_CMD=5;
+unsigned char *cmd[]=
+{
+	"settextcolor ",
+	"help",
+	"clear",
+	"login",
+	"logout"
+};
+
+
+
+void cmd_help()
+{
+	int i=0;
+	puts("\nvalid commands are:\n");
+	for(i=0;i<MAX_CMD;i++)
+	{
+		puts("\t");
+		puts(cmd[i]);
+		puts("\n");
+	}
+
+}
+
+
+void cmd_setscrcolor(unsigned char *s1)
+{
+int i=0,j=0,k=0;
+unsigned char F=0,B=0;
+unsigned char fore[10],bk[10];
+
+puts("inside calling_settextcolor();\n");
+	for(i=0;s1[i]!=' ';i++);
+	j=i+1;
+	for(;s1[j]!=' ';j++);
+
+i++;j++;
+printf("first[ ] at i=[%d]",i);printf(" & second at j=[%d]",j);
+
+	k=0;
+	for(;k!=2;i++,k++)
+	{
+		fore[k]=s1[i];
+	}
+	fore[k]='\0';
+
+	puts("FORE COLOR=");puts(fore);printf("strlen-fore=%d",strlen(fore));
+
+	k=0;
+	for(i=j;k!=2;i++,k++)
+	{
+		bk[k]=s1[i];
+	}
+	bk[k]='\0';
+	puts("BK COLOR=");puts(bk);printf("strlen-bk=%d",strlen(bk));
+	F=atoi(fore,10);
+	B=atoi(bk,10);
+	printf("F=[%x]",(unsigned char)F);
+	printf("B=[%x]",(unsigned char)B);
+	settextcolor((unsigned char)F,(unsigned char)B);
+}
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+void docmdno(int i,unsigned char *s1)
+{
+	puts("in DO_CMD_NO");
+	printf("command no=[%d]",i);
+	puts(s1);
+	if(i==0 && strlen(s1)>=18)
+	{
+		puts("call:calling_settextcolor();\n");
+		cmd_setscrcolor(s1);
+	}
+	if(i==1)
+	{
+		puts("call:cmd_help();\n");
+		cmd_help();
+	}
+	if(i==2)
+	{
+		puts("call:cmd_clear");
+		cls();
+
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+
